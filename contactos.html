@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTOS | Condor Xtreme</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/condor.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="contenedor"  style="background-color: white;">
+        <header>
+            <a href="https://www.condorxtreme.com/">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="destino.html">DESTINOS</a></li>
+                    <li><a href="#">CONTACTOS</a></li>
+                    <li><a href="video.html">VIDEOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h5>contactos</h5>        
+        
+        <main id="contenido-contacto">
+            <section id="info-contacto">
+                <h3><i class="fa-solid fa-address-book"></i> Información de Contacto</h3>
+                
+                <table>
+                    <caption>Datos de la Empresa y Horario de Atención</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Información y Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Dirección:</th>
+                            <td>Explanada Costa Verde del Distrito de Magdalena del Mar</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Teléfono:</th>
+                            <td>+51 947392102</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Email:</th>
+                            <td>contact@condorxtreme.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Atención de Lunes a Sábado: 9:00 - 18:00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="formulario-contacto">
+                <h3><i class="fa-solid fa-envelope"></i> Escríbenos</h3>
+                
+                <form action="/submit-form" method="post" id="form-contact"> 
+                    
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu Nombre y Apellido">
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 912345678" pattern="[0-9]{9}" title="Debe contener 9 dígitos numéricos">
+
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required placeholder="Consulta sobre tours">
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    
+                    <div class="botones-form">
+                        <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                        <button type="reset" class="boton-limpiar">Limpiar Campos</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section id="mapa-ubicacion">
+                <h3><i class="fa-solid fa-map-location-dot"></i> Dónde Encontrarnos</h3>
+                <div class="video-responsive"> 
+                     <iframe src="https://www.google.com/maps/embed?pb=!4v1762898862162!6m8!1m7!1sGBunKs4hvNrvcyA6otMFdw!2m2!1d-12.073187163613!2d-76.94852318441649!3f185.91258342850085!4f-3.988196626139427!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="video"
+                    ></iframe>
+                </div>
+            </section>
+        </main>
+                <footer>
+            <h4>© Condor Xtreme 2024 Todos los derechos reservados</h4>
+            <div>
+                <address>
+                    <ul>
+                        <li>Explanada Costa Verde del Distrito de Magdalena del Mar</li>
+                        <li>+51 947392102</li>
+                        <li>contact@condorxtreme.com</li>
+                    </ul>
+                </address>
+                <nav>
+                    <p>Redes Sociales: </p>
+                    <ul id="redes">
+                        <li><a href="https://web.facebook.com/condorXtreme?_rdc=1&_rdr#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/condor_xtreme"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=51947392102&text=Deseo+realizar+un+consulta+personalizada+sobre...+&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.youtube.com/condorxtremeperu"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
